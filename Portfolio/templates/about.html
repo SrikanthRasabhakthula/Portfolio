@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About{% endblock title %}
+
+{% block content %}
+
+<section class="about" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="title">
+                <h1>About Me</h1>
+                <p>Know more about me</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="about-content">
+                <div class="row">
+                    <div class="img">
+                        <img src="{% static 'img/me.png' %}" alt="Profile Picture" />
+                    </div>
+                    <article class="text">
+                        <h4>I'm Srikanth Rasabhakthula</h4>
+                        <h6>A <span>Python Developer</span> and <span>Data Engineer</span> based in Hyderabad, India.</h6>
+                        <p>
+                            Experienced Python Developer with a strong background in Django, Robot Framework, SQL, 
+                            HTML, CSS, and JavaScript. Skilled in data analysis using NumPy and Pandas. 
+                            Certified in Azure fundamentals (AZ-900) and Azure Data Fundamentals (DP-900), demonstrating cloud expertise. 
+                            Proven track record at Wipro as a Python Developer.
+                        </p>
+                        
+                        <div class="skills">
+                            <h6>Technologies I have worked with:</h6>
+                            <ul class="fa-ul">
+                                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span> HTML5</li>        
+                                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span> CSS</li>
+                                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span> JavaScript</li>
+                                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span> Python</li>
+                                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span> Django</li>
+                                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span> SQL</li>
+                                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span> Robot Framework</li>
+                                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span> Azure</li>
+                                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span> Azure Data Factory</li>
+                                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span> Azure Data Lake</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}

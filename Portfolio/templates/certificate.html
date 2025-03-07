@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{%block title%}Certificate{%endblock title%}
+
+
+{%block content%}
+
+<section class="blog" id="blog">
+    <div class="container">
+       <div class="row">
+          <div class="title text-center">
+             <h1>Certifications</h1>
+          </div>
+       </div>
+       <div class="row"> 
+          <div class="blog-content">
+             <div class="blog-box">
+                <div class="blog-img">
+                   <img src='{% static "img/hacker rank.png" %}' />
+                </div>
+                
+             </div>
+             <div class="blog-box">
+                <div class="blog-img">
+                   <img src='{% static "img/drf.png" %}'/>
+                </div>
+          </div>
+             <div class="blog-box">
+                <div class="blog-img">
+                   <img src='{% static "img/sql.png" %}' />
+                </div>
+          </div>
+       </div>
+    </div>
+ </section>
+
+{%endblock content%}

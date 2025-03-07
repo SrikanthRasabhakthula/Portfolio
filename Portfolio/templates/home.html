@@ -1,0 +1,90 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'img/logo.png' %}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link href="{% static 'css/header.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/main.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/home.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/about.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/service.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/portfolio.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/testimonials.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/blog.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/contact.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/footer.css' %}" rel="stylesheet" />
+</head>
+
+
+<body>
+
+<header>
+   <div class="container">
+       <div class="row">
+           <div class="brand-name">
+               <a class="logo" href="{% url 'home' %}">Srikanth</a>
+           </div>
+
+               <nav class="navbar">
+               <ul>
+                   <li><a href="{% url 'home' %}" class="active">Home</a></li>
+                   <li><a href="{% url 'about' %}">About</a></li>
+                   <li><a href="{% url 'projects' %}">Projects</a></li>
+                   <li><a href="{% url 'certificates' %}">Certifications</a></li>
+                   <li><a href="{% url 'contact' %}">Contact</a></li>
+               </ul>
+           </nav>
+       </div>
+   </div>
+</header>
+
+      <section class="home" id="home">
+         <div class="container">
+            <div class="row full-screen">
+               <div class="home-content">
+                  <div class="block">
+                     <h6>Hi, my name is</h6>
+                     <h1>Srikanth Rasabhakthula</h1>
+                     <h3>I worked as a Project Engineer at Wipro.</h3> 
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+
+
+      <footer>
+         <section class="copyright">
+            <div class="container">
+               <p>© <span id="year"></span> | Designed and Developed By Srikanth Rasabhakthula. | All rights reserved.</p>
+            </div>
+         </section>
+     </footer>
+ 
+     <div class="lightbox hide">
+        <span class="close-lightbox fa fa-close"></span>
+        <img src="" alt="portfolio"/>
+     </div>
+ 
+     <script>
+         document.getElementById("year").textContent = new Date().getFullYear();
+     </script>
+ </body>
+ </html>
+
+
+
+
+      
+ 
+
+ 
